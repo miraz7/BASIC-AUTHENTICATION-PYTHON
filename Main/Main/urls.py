@@ -25,7 +25,7 @@ v1_api_patterns=[
 
 urlpatterns = [
     path('',  HealthCheckAPI.as_view()),
-    path('evident/auth/api/', include([
+    path('api/', include([
         path('v1/', include(v1_api_patterns))
     ]))
 ]
